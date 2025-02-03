@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Biodata Siswa</title>
+    <link rel="stylesheet" href="Saskia_Biodata.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Biodata Siswa</h2>
+
+        <form action="/submit-biodata" method="POST">
+            <!-- Nama Lengkap -->
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+            <!-- Alamat -->
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap" required></textarea><br><br>
+
+            <!-- Tempat Lahir -->
+            <label for="tempat_lahir">Tempat Lahir:</label><br>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Masukkan tempat lahir" required><br><br>
+
+            <!-- Tanggal Lahir -->
+            <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+
+            <!-- Jenis Kelamin -->
+            <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+            <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="laki_laki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <!-- Hobi -->
+            <label for="hobi">Hobi:</label><br>
+            <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+            <label for="membaca">Membaca</label><br>
+            <input type="checkbox" id="traveling" name="hobi" value="Traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br><br>
+
+            <!-- Kelas -->
+            <label for="kelas">Kelas:</label><br>
+            <select id="kelas" name="kelas" required>
+                <option value="X PPLG 1">X PPLG 1</option>
+                <option value="X PPLG 2">X PPLG 2</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Kirim Biodata</button>
+        </form>
+
+        <div class="remember-me">
+            <input type="checkbox" id="Remember me" name="Remember me" value="Remember me">
+            <label for="Remember me">Ingat Saya</label><br><br>
+        </div>
+    </div>
+
+</body>
+</html>
